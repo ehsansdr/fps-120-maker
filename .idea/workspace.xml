@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e29b588-5edd-43d5-9125-46e54983f93b" name="Changes" comment="first committ">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fbs120maker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ProcessOfFps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/src/inputs/KeyboardInputs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/src/inputs/MouseInputs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/src/main/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/src/main/GamePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/src/main/GameWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatformerTutorial/src/main/MainClass.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
