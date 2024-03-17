@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c5b97b9-9315-45fb-ad27-4a442802113d" name="Changes" comment="thread and comment set with tutorial">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7c5b97b9-9315-45fb-ad27-4a442802113d" name="Changes" comment="loop updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +81,13 @@
       <option name="presentableId" value="LOCAL‎۰۰۰۰۳" />
       <updated>1704200134736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎۰۰۰۰۴" summary="loop updated">
+      <created>1710669597194</created>
+      <option name="number" value="LOCAL‎۰۰۰۰۴" />
+      <option name="presentableId" value="LOCAL‎۰۰۰۰۴" />
+      <updated>1710669597194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +117,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="first committ" />
     <MESSAGE value="thread and comment set with tutorial" />
-    <option name="LAST_COMMIT_MESSAGE" value="thread and comment set with tutorial" />
+    <MESSAGE value="loop updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="loop updated" />
   </component>
 </project>

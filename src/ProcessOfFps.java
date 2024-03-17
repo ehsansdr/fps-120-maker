@@ -30,10 +30,24 @@ public class ProcessOfFps implements Runnable {
             previousTime = currentTime;
 
             if (deltaU >= 1) {
+                //put your statement in this part
 
+                //
+
+                /** DO NOT OMIT THESE TWO STATEMENT*/
+                updates++;
+                deltaU--;
             }
 
             if (deltaF >= 1) {//for Fps
+                //put your statement in this part
+
+
+                //
+
+                /** DO NOT OMIT THESE TWO STATEMENT*/
+                frames++;
+                deltaF--;
             }
 
             if (System.currentTimeMillis() - lastCheck >= 1000) {//every 1 sec
