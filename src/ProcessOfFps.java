@@ -1,63 +1,44 @@
-public class ProcessOfFps implements Runnable{
-    Thread framePerSecThread;
-    final int FPS_SET = 120;
-    double timePerFrameByNanoSec = 1000000000.0 / FPS_SET;// 1_000_000_000.0 ns = 1 sec
-    public ProcessOfFps() {
+public class ProcessOfFps implements Runnable {
+    private int fps = 120;
+    private int UPS = 120;
+    Thread gameLoopThread;
 
-        startGameLoop();
-    }
-    private void startGameLoop() {
-        framePerSecThread = new Thread(this);
-        framePerSecThread.start();
+    public ProcessOfFps(){
+        gameLoopThread = new Thread(this);
+        gameLoopThread.start();
     }
 
     @Override
-    public void run() {//how thread would do and mange in this progeam
+    public void run(){
+        double timePerFrame = 1000000000.0 / fps;
+        double timePerUpdate = 1000000000.0 / UPS;
 
-        long lastFrame = System.nanoTime();
-        long now = System.nanoTime();
+        long previousTime = System.nanoTime();
 
         int frames = 0;
+        int updates = 0;
+        long lastCheck = System.currentTimeMillis();
 
-        //these variables have control the IFs in while(true) loop and manage the loop duration times
-        //it is not actually and basically every 1 or 5 or ... sec
-        //it defines it work that how we use
-        long lastCheckOn_1_Sec = System.currentTimeMillis();
-        long lastCheckOn_5_Sec = System.currentTimeMillis();
+        double deltaU = 0;
+        double deltaF = 0;
 
         while (true) {
+            long currentTime = System.nanoTime();
 
-            now = System.nanoTime();
-            if (now - lastFrame >= timePerFrameByNanoSec) {//this "if" execute 120 per 1 sec based on this ("content")
-                /**
-                you can put your statement with you want to execute every *** time (base on ( >= ***) in if's condition)
-                 */
+            deltaU += (currentTime - previousTime) / timePerUpdate;
+            deltaF += (currentTime - previousTime) / timePerFrame;
+            previousTime = currentTime;
 
-                lastFrame = now;
-                frames++;
+            if (deltaU >= 1) {
+
             }
 
-            if (System.currentTimeMillis() - lastCheckOn_1_Sec >= 1000) {//this "if" execute every 1 sec based on this ("content")
-                System.out.println("FPS: " + frames);
-                /**
-                you can put your statement with you want to execute like upper statement
-                 every x time (base on ( >= ***) in if's condition)
-                 */
-
-
-                lastCheckOn_1_Sec = System.currentTimeMillis();
-                frames = 0;
+            if (deltaF >= 1) {//for Fps
             }
 
+            if (System.currentTimeMillis() - lastCheck >= 1000) {//every 1 sec
 
-            if (System.currentTimeMillis() - lastCheckOn_5_Sec >= 5000) {//this "if" execute every 5 sec based on this ("content")
-                /**
-                you can put your statement with you want to execute every *** time (base on ( >= ***) in if's condition)
-                 */
-                lastCheckOn_5_Sec = System.currentTimeMillis();
-                System.out.println("5 sec passed ");
             }
         }
-
     }
 }
